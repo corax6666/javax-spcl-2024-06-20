@@ -6,7 +6,7 @@ POST http://localhost:8084/api/skills
 Content-Type: application/json
 
 {
-  "name": "Java"
+  "name": "Java17"
 }
 
 ### Create skill
