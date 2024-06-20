@@ -7,8 +7,8 @@ import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/assigned-skills")
 @AllArgsConstructor
+@RequestMapping("/api/assigned-skills")
 public class AssignedSkillsController {
 
     private final AssignedSkillsService assignedSkillsService;

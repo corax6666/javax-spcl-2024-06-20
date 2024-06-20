@@ -1,6 +1,5 @@
 package careerservice.skill.service;
 
-import careerservice.assignedskills.service.AssignedSkillsRepository;
 import careerservice.skill.command.CreateSkillCommand;
 import careerservice.skill.model.Skill;
 import careerservice.skill.view.SkillView;
@@ -15,8 +14,6 @@ public class SkillService {
 
     private SkillRepository skillRepository;
 
-    private AssignedSkillsRepository assignedSkillsRepository;
-
     private SkillMapper skillMapper;
 
     public SkillView create(CreateSkillCommand command) {
@@ -28,6 +25,5 @@ public class SkillService {
     public List<SkillView> listSkills() {
         return skillMapper.toViews(skillRepository.findAll());
     }
-
 
 }

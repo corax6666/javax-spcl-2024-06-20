@@ -3,16 +3,11 @@ package careerservice.assignedskills.service;
 import careerservice.NotFoundException;
 import careerservice.assignedskills.command.AssignSkillsToEmployeeCommand;
 import careerservice.assignedskills.model.AssignedSkills;
-import careerservice.assignedskills.model.LeveledSkill;
 import careerservice.assignedskills.view.EmployeeSkillsView;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
-import java.util.NoSuchElementException;
-import java.util.function.Function;
-import java.util.stream.Collectors;
 
 @Service
 @AllArgsConstructor
@@ -20,7 +15,6 @@ import java.util.stream.Collectors;
 public class AssignedSkillsService {
 
     private AssignedSkillsRepository assignedSkillsRepository;
-
 
     @Transactional
     public EmployeeSkillsView assignSkillsToEmployee(AssignSkillsToEmployeeCommand command) {

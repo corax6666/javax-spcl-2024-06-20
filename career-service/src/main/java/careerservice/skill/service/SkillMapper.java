@@ -8,6 +8,7 @@ import java.util.List;
 
 @Mapper(componentModel = "spring")
 public interface SkillMapper {
+
     SkillView toView(Skill skill);
 
     List<SkillView> toViews(List<Skill> skills);
